@@ -18,8 +18,11 @@ Syntax highlighted code block
 - Bulleted
 - List
 
-1. Numbered
-2. List
+1. Why is Luke so Awesome
+2. Who even knows
+3. He just is
+4. Can't believe you kept reading to this point
+5. Ha
 
 **Bold** and _Italic_ and `Code` text
 
