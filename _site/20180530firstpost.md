@@ -1,0 +1,17 @@
+# The One Day Memorial Day Weekend
+## Post for 05-30-2018
+This Weekend I traveled with 12 friends up to Interlochen State Park so that some of my friends could run some of the many races that Bayshore has to offer.
+Bayshore has a 10k half and full marathon.  
+I was not planning on running.
+Then on the way there I learned that one of my friends decided not to come and run the marathon.  
+Why would I let that bib go to waste!
+I decided then 8 hrs before the race that I would be running the marathon!
+The marathon was awesome but from miles 20 to 26 it was a reall struggle.
+In the beginning I went out in a 5:40 mile which is way to fast.  
+During the race I met a lot of really cool people including self proclaimed "Dad bod man".  I was also passed by a runner from Iowa state who I then latter passed while he was walking!
+There was also direct sun on the last 7 miles of the race which caused me to have mild heat exaustion at the end I think because of the cramping that I was experiencing.
+After the race we ate at a great BBQ place in Traverse city called Spark's BBQ.
+We also went to Peace love and little donuts
+I then sat on the beach for the rest of the day which was really relaxing.
+
+I then enjoyed the last two days of the memorial day weekend at work haha.
