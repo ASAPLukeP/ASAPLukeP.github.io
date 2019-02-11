@@ -1,5 +1,28 @@
 <html>
     <head>
+        <style>
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                background-color: lightcyan;
+            }
+            li a{
+                display: block;
+                color: blue;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            li a.active{
+                background-color: aliceblue;
+                color:aqua;
+            }
+            li a:hover:not(.active){
+                background-color: black;
+                color: white;
+            }
+        </style>
         Front page
     </head>
     <body>
@@ -9,5 +32,16 @@
                 Blog post 02-07-2019
             </a>
         </div>
+        <ul>
+            <li>
+                <a class="active" href="#BlogStorage.html">Home</a>
+            </li>
+            <li>
+                <a href="">Return to beginnning</a>
+            </li>
+            <li>
+                <a href="Running">Return to beginnning</a>
+            </li>
+        </ul>
     </body>
 </html>
