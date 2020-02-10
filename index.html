@@ -1,47 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
 <html>
     <head>
-        <style>
-            ul{
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                width: 200px;
-                background-color: lightcyan;
-            }
-            li a{
-                display: block;
-                color: blue;
-                padding: 8px 16px;
-                text-decoration: none;
-            }
-            li a.active{
-                background-color: aliceblue;
-                color:aqua;
-            }
-            li a:hover:not(.active){
-                background-color: black;
-                color: white;
-            }
-        </style>
-        Front page
+        <title>ASAPLukeP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div>
-            Find me at my blog
-            <a href= "https://ASAPLukeP.github.io/BlogStorage.html">
-                Blog post 02-07-2019
-            </a>
-        </div>
-        <ul>
-            <li>
-                <a class="active" href="BlogStorage.html">Home</a>
-            </li>
-            <li>
-                <a href="">Return to beginnning</a>
-            </li>
-            <li>
-                <a href="Running">Physical Training page</a>
-            </li>
-        </ul>
+        <h1>Welcome to my Webpage!</h1>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">ASAPLukeP</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="Running">Running</a></li>
+                <li><a href="Blog">THE Blog</a></li>
+                <li><a href="BSTest">BSPractice</a></li>
+              </ul>
+            </div>
+        </nav>
     </body>
 </html>
