@@ -1,8 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }      
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+    
     <head>
+        <style>
+          .imgtest{
+            height:50;
+            width:50;
+          }
+        </style>
         <title>ASAPLukeP</title>
+        <h1>Welcome to my Webpage!</h1>
+        <div w3-include-html="header.html"></div>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,19 +48,49 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1>Welcome to my Webpage!</h1>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="#">ASAPLukeP</a>
-              </div>
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="Running">Running</a></li>
-                <li><a href="Blog">THE Blog</a></li>
-                <li><a href="BSTest">BSPractice</a></li>
-              </ul>
+      <script>
+        includeHTML();
+      </script>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="Penguin.jpeg" alt="Los Angeles" class="imgtest" id="frimage">
             </div>
-        </nav>
+        
+            <div class="item">
+              <img src="KiwiBrd.jpg" alt="Chicago" class="imgtest" id="frimage">
+            </div>
+        
+            <div class="item">
+              <img src="Lukewater.jpg" class="imgtest" id="frimage">
+            </div>
+            <div class="item">
+              <img src="Lukewater2.jpg" class="imgtest" alt="New York" id="frimage">
+            </div>
+          </div>
+        
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <script>
+          var img = document.getElementById('frimage');
+          img.height="50";
+          img.width="50";
+        </script>
     </body>
 </html>
